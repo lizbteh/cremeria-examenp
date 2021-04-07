@@ -1,0 +1,85 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* LAYOUT*/
+
+body{text-align: center; font: 200 20px/1.7 'Roboto Condensed'; }
+.header { display: flex; justify-content: center;align-items: center;}
+.navbar{display: flex; justify-content: center; align-items: center;}
+.promociones {text-align: left;}
+.list-services {display: flex; justify-content: center; align-items: center;}
+.list-services figure{display: flex; justify-content: center; align-items: center; flex-flow: column;}
+
+
+/* GENERIC ITEMS*/
+.header {height: 450px; background: url(../img/fondo6.jpg) no-repeat center top; background-size: cover}
+.navbar{height: 63px; background:#0C0B0C }
+.navbar a {color:white; padding: 0 20px; text-decoration: none; text-transform: uppercase; font:20px 'Roboto Condensed';}
+.title{margin-bottom: 40px font:60px 'Roboto Condensed'; text-transform: uppercase; }
+p{margin-bottom: 40px;}
+
+
+/*PARTES DE LA PAGINA*/
+.content {padding: 80px 0;}
+.who {background:#0C0B0C; color: white;}
+.who p{max-width: 1055px; margin: 0 auto;}
+.services{background: #0C0B0C; /*cambiar de color*/ color: white;}
+.promociones{background: url(../img/fondo%20promociones.jpg) no-repeat center top; background-size: cover; color:white;}
+.contain {max-width:1050px; margin: 0 auto;}
+.promociones p{max-width: 250px;}
+.localization{ background:#0C0B0C  padding-bottom: 0;}
+.localization .map img {max-width: 100%; width:%;*/}
+
+/*LISTAS*/
+.list-services figure {position: relative; width: 150px; height: 190px;}
+.list-services figure:after {content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background:#FFF; width: 150px; height: 150px;}
+.list-services img {position: relative; z-index: 1;}
+.list-services li {padding: 0 30px;}
+.list-services figcaption {position: relative; left: 0; top:0; bottom: -40px;}
